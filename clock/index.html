@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div>
+        <div class="heading">
+            <h1>Clock App</h1>
+        </div>
+
+        <div class="content">
+            <div class="options">
+                <button type="button" class="btn" id="show_clock">CLOCK</button>
+                <button type="button" class="btn" id="show_timer">TIMER</button>
+                <button type="button" class="btn" id="show_stopwatch">STOPWATCH</button>
+            </div>
+
+            <div class="clock-page" id="clock_page">
+                <p class="clock" id="clock"></p>
+            </div>
+
+            <div class="stopwatch-page" id="stopwatch_page">
+                <p class="clock" id="stopwatch">00:00:00</p>
+                <div class="stopwatch-buttons">
+                    <button type="button" class="btn" id="stopwatch_reset_button">Reset</button>
+                    <button type="button" class="btn" id="stopwatch_control_button">Start</button>
+                </div>
+            </div>
+
+            <div class="timer-page" id="timer_page">
+                <p class="clock" id="timer">00:00:00</p>
+                
+                <div class="timer-inputs">
+                    <div class="input-field">
+                        <label for="timer_hours_input">Hours:</label>
+                        <input type="number" id="timer_hours_input">
+                    </div>
+                    <div class="input-field">
+                        <label for="timer_minutes_input">Minutes:</label>
+                        <input type="number" id="timer_minutes_input">
+                    </div>
+                    <div class="input-field">
+                        <label for="timer_seconds_input">Seconds:</label>
+                        <input type="number" id="timer_seconds_input">
+                    </div>
+                </div>
+                
+                <div class="timer-buttons">
+                    <button type="button" class="btn" id="timer_reset_button">Reset</button>
+                    <button type="button" class="btn" id="timer_control_button">Start</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
