@@ -1,0 +1,111 @@
+body {
+    background-color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    width: 250px;
+    height: 60px;
+    font-size: 1.5rem;
+    background-color: rgb(23, 23, 164);
+    color: whitesmoke;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.clock-page,
+.timer-page,
+.stopwatch-page {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clock {
+    width: 100%;
+    text-align: center;
+    font-size: 8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.timer-page, .stopwatch-page {
+    display: none;
+}
+
+#stopwatch {
+    width: 100%;
+    text-align: center;
+}
+
+.stopwatch-buttons {
+    margin-top: 20px;
+}
+
+.stopwatch-page .btn {
+    width: 150px;
+}
+
+.timer-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.timer-inputs label,
+.timer-inputs input {
+    font-size: 1.4rem;
+}
+
+.timer-inputs input {
+    width: 40px;
+    height: fit-content;
+    text-align: center;
+    margin-left: 6px;
+    margin-right: 20px;
+}
+
+.timer-buttons {
+    margin-top: 20px;
+}
+
+.timer-buttons .btn {
+    width: 150px;
+}
