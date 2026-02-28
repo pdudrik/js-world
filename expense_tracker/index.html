@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense tracker</title>
+</head>
+<body>
+    <div class="page">
+
+        <div class="heading">
+            <h1>Expense Tracker</h1>
+        </div>
+
+        <div class="content">
+            
+            <form id="form">
+                <div class="option-bar">
+                    
+                    <div class="option-item">
+                        <label for="date_input">Date:</label>
+                        <input type="date" id="date_input" name="date">
+                    </div>
+                    <div class="option-item">
+                        <label for="">Name:</label>
+                        <input type="text" id="name_input" name="name">
+                    </div>
+                    <div class="option-item">
+                        <label for="">Value:</label>
+                        <input type="number" id="value_input" name="value" step="0.01">
+                    </div>
+                    <div class="option-buttons">
+                        <button type="submit" class="button">Add</button>
+                        <button type="reset" class="button">Cancel</button>
+                    </div>
+
+                </div>
+            </form>
+            
+            <div class="table">
+                <table>
+                    <tbody id="table">
+
+                        <tr>
+                            <th class="table-heading">Date</th>
+                            <th class="table-heading">Name</th>
+                            <th class="table-heading">Value</th>
+                            <th class="table-heading"></td>
+                        </tr>
+                            <!-- <tr>
+                                <td class="table-cell">12.02.2026</td>
+                                <td class="table-cell">Groceries</td>
+                                <td class="table-cell"><span class="value">14.20</span>EUR</td>
+                                <td class="table-cell delete-icon">
+                                    <img src="delete.svg" alt="X" width="35px" height="35px">
+                                </td>
+                            </tr> -->
+                            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>
